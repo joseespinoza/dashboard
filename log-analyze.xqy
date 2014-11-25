@@ -12,6 +12,7 @@ declare namespace gr="http://marklogic.com/xdmp/group";
 declare namespace ho="http://marklogic.com/xdmp/hosts";
 declare namespace hs="http://marklogic.com/xdmp/status/host";
 declare namespace xh="http://www.w3.org/1999/xhtml";
+declare namespace cl="http://marklogic.com/xdmp/clusters";
 
 import module namespace pd="http://marklogic.com/performance/dashboard"
  at "lib-dashboard.xqy";
@@ -102,6 +103,14 @@ declare variable $FOREST-STATUS as element(fs:forest-status)* :=
   $SUPPORT/fs:forest-status
 ;
 
+declare variable $SERVER as element(xdmp:server-status)* :=
+  $SUPPORT/xdmp:server-status
+;
+
+declare variable $CLUSTER as element(cl:clusters)* :=
+  ($SUPPORT/cl:clusters)[1]
+;
+
 declare variable $SIZING as element(pd:sizing)* := (
   for $sizing in (
     for $database in $DATABASES
@@ -127,6 +136,98 @@ declare variable $SIZING as element(pd:sizing)* := (
     $sizing/@forest-name
   return $sizing
 );
+
+
+declare variable $xml := 
+	
+	<cluster> {$CLUSTER/cl:cluster-name/text()} 
+	{for $group in $GROUPS
+	 return 
+		<group>{$group/gr:group-name/text(), 
+		for $host in $HOSTS
+		where $host/ho:group eq $group/gr:group-id
+		return 
+			<host>{$host/ho:host-name/text(),
+			for $forest in $ASSIGNMENTS
+			where $forest/an:host eq $host/ho:host-id
+			return
+				<forest>{$forest/an:forest-name/text(),
+				for $db in $DATABASES
+				where $db//db:forest-id eq $forest/an:forest-id
+				return
+					<database>{$db/db:database-name/text(),
+					for $groups in $GROUPS
+					let $servers := $groups//gr:http-server | $groups//gr:xdbc-server | $groups//gr:odbc-server | $groups//gr:webdav-server
+        				return
+					for $server in $servers
+        				let $node-name := fn:concat(fn:node-name($server), "-name")
+        				let $server-name := fn:concat(fn:node-name($server), ': ', $server//child::element()[fn:node-name(.) eq QName("http://marklogic.com/xdmp/group", $node-name)])
+        				let $mod-db := if (fn:string($server//gr:database) = "0") then ($server//gr:modules) else ($server//gr:database)
+        				let $dtb := $DATABASES//db:database-name[../db:database-id = $mod-db]
+					where $dtb eq $db/db:database-name
+        				return
+	        				<app-server>{$server-name, ":group=", $groups/gr:group-name/text()}</app-server>
+					}</database>
+				}</forest>
+			}</host>
+		}</group>
+	}
+	</cluster>
+;
+
+
+declare function local:walk-tree(
+  $node as node())
+as node()
+{
+  let $more-sibs := $node/following-sibling::node()
+  let $more-kids := $node/node()
+  return
+  if (fn:local-name($node) = "cluster") then(
+    (: Reconstruct node and descend to its children :)
+    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'"', if(boolean($node/child::text()/following-sibling::*)) then(',"children": [&#10;',
+      for $child-node in $node/node()
+      return
+        (local:walk-tree($child-node)),
+        "]}"
+        )else ('}'),
+     (: Add a comma only if the node has more <group> sibilings left :)
+     if ($node/following-sibling::* != "") then (",") else ("")
+    })
+    
+  else if (fn:local-name($node) = "group") then(
+    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'"', if(boolean($node/child::text()/following-sibling::*)) then(',"children": [&#10;',
+      for $child-node in $node/node()
+      return
+        local:walk-tree($child-node),
+        "]}"
+    )else ('}'),
+     (: Add a comma only if the node has more <group> sibilings left :)
+     if ($node/following-sibling::* != "") then (",") else ("")
+    })
+   
+  else if (xdmp:node-kind($node) = "text") then
+    if ( fn:normalize-space(xdmp:quote($node/text())) = "") then text{""} else
+      text { fn:concat('{"name": "', $node/text(), '"},') }
+  else if (fn:local-name($node) = "host" or
+           fn:local-name($node) = "forest" or
+           fn:local-name($node) = "database" or
+           fn:local-name($node) = "app-server") then(
+    (: Return the json equivalent :)
+    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'"', if(boolean($node/child::text()/following-sibling::*)) then(',"children": [&#10;',
+    for $child-node in $node/node() return local:walk-tree($child-node),
+      "]}"
+    )else ('}'),
+     (: Add a comma only if the node has more <group> sibilings left :)
+     if ($node/following-sibling::* != "") then (",") else ("")
+    })
+    
+  else
+    (: Should never get here :)
+    text { '"###### ERROR ########": ','"',fn:local-name($node),'",','"children": [&#10;' }
+};
+
+
 
 declare function local:unquote(
   $in as xs:string )
@@ -234,6 +335,12 @@ declare function local:html()
         <script language="JavaScript" type="text/javascript"
       src="log-analyze.js">
         </script>
+
+    <link type="text/css" rel="stylesheet" href="graph/style.css"/>
+    <script language="JavaScript" type="text/javascript" src="graph/d3/d3.js"></script>
+    <script language="JavaScript" type="text/javascript" src="graph/d3/d3.layout.js"></script>
+
+
         </v:head>,
       element v:body {
         <div>
@@ -456,6 +563,7 @@ declare function local:html()
     },
     <hr/>
     ,
+
           <h2>Forest Details</h2>,
     for $i in $SIZING
     let $is-forest := exists($i/@forest-name)
@@ -541,7 +649,16 @@ declare function local:html()
     }
   }
   
-        <code>
+
+	<h2>Cluster Graph</h2>
+	
+	{(:JavaScript file for creating graph:)}
+	{xdmp:save("dashboard1/graph/cluster.json", local:walk-tree($xml))}
+        <script language="JavaScript" type="text/javascript" src="graph/graph.js"></script>
+
+
+<hr/>
+	<code>
         {'digraph{
         rankdir=LR; ranksep=1.5;
         node [shape=box];',
@@ -592,6 +709,8 @@ declare function local:html()
         }}'
         }
         </code>
+
+
         <hr/>
         <p>Elapsed time: { xdmp:elapsed-time() }</p>
         {
@@ -605,7 +724,13 @@ declare function local:html()
   )
 };
 
+
+
+
+
+
 (: display form for upload :)
+
 if (empty($SUPPORT)) then v:page(
   <v:page xmlns="http://www.w3.org/1999/xhtml">
   {

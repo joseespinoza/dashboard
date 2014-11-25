@@ -66,9 +66,7 @@ declare variable $v:PROFILER-COLUMNS as element(columns) := (
   }
 );
 
-declare function v:page(
-  $page as element(v:page) )
- as item()+
+declare function v:page($page as element(v:page) ) as item()+
 {
   $v:CONTENT-TYPE,
   $v:DOCTYPE-XHTML,
