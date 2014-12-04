@@ -1,633 +1,2259 @@
 {
-"name": " ctcmkliapp01.ap.org-cluster " ,"children": [
+"name": " psdb11446.lexis-nexis.com-cluster " ,"children": [
   {
-"name": " Default " ,"children": [
+"name": " Data-Nodes " ,"children": [
   {
-"name": " ctcmkliapp01.ap.org " ,"children": [
+"name": " psdb11446.lexis-nexis.com " ,"children": [
   {
-"name": " Documents " ,"children": [
+"name": " patentContentDB_F1 " ,"children": [
   {
-"name": " Documents " }  ]} , {
-"name": " App-Services " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " App-Services " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F73 " ,"children": [
   {
-"name": " http-server: Manage :group=Default " } , {
-"name": " http-server: App-Services :group=Default " } , {
-"name": " http-server: HealthCheck :group=Default " }  ]}  ]} , {
-"name": " Modules " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " Modules " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentSearchDB_F1 " ,"children": [
   {
-"name": " http-server: _app_default_modules_8011 :group=Default " } , {
-"name": " http-server: Modules-webdav-9003 :group=Default " }  ]}  ]} , {
-"name": " Fab " ,"children": [
+"name": " patentSearchDB " }  ]} , {
+"name": " patentContentDB_F213_Replica " } , {
+"name": " patentContentDB_F214_Replica " } , {
+"name": " patentContentDB_F215_Replica " } , {
+"name": " Security_F1 " ,"children": [
   {
-"name": " Fab " }  ]} , {
 "name": " Security " ,"children": [
   {
-"name": " Security " ,"children": [
-  {
-"name": " http-server: Admin :group=Default " }  ]}  ]} , {
-"name": " Schemas " ,"children": [
-  {
-"name": " Schemas " ,"children": [
-  {
-"name": " http-server: validate-8024 :group=Default " }  ]}  ]} , {
-"name": " Triggers " ,"children": [
-  {
-"name": " Triggers " }  ]} , {
-"name": " Last-Login " ,"children": [
-  {
-"name": " Last-Login " }  ]} , {
-"name": " StuartsAPPLTestApp-modules " ,"children": [
-  {
-"name": " StuartsAPPLTestApp-modules " }  ]} , {
-"name": " Delivery " } , {
-"name": " feed " ,"children": [
-  {
-"name": " feed " ,"children": [
-  {
-"name": " http-server: feed :group=Default " } , {
-"name": " http-server: feed-webdav-8901 :group=Default " }  ]}  ]} , {
-"name": " eAP01_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
-  {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP02_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
-  {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP03_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
-  {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP04_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
-  {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " Sitemaps " ,"children": [
-  {
-"name": " Sitemaps " ,"children": [
-  {
-"name": " http-server: Sitemaps-9002 :group=Default " }  ]}  ]} , {
-"name": " InfoStudio " ,"children": [
-  {
-"name": " InfoStudio " }  ]} , {
-"name": " test-xqy " ,"children": [
-  {
-"name": " test-xqy " }  ]} , {
-"name": " feed_ingest-modules " ,"children": [
-  {
-"name": " feed_ingest-modules " }  ]} , {
-"name": " Outfiles " ,"children": [
-  {
-"name": " Outfiles " ,"children": [
-  {
-"name": " http-server: Outfiles_WebDav :group=Default " }  ]}  ]} , {
-"name": " test " ,"children": [
-  {
-"name": " test " }  ]} , {
-"name": " POC_ItemChains " ,"children": [
-  {
-"name": " POC_ItemChains " }  ]} , {
-"name": " Samples " ,"children": [
-  {
-"name": " Samples " }  ]} , {
-"name": " APMS-Classifications " ,"children": [
-  {
-"name": " APMS-Classifications " ,"children": [
-  {
-"name": " http-server: APMS-Classifications :group=Default " }  ]}  ]} , {
-"name": " loader " ,"children": [
-  {
-"name": " loader " ,"children": [
-  {
-"name": " http-server: Sitemap-Loader-8091 :group=Default " }  ]}  ]} , {
-"name": " tchen-test " } , {
-"name": " Bodleian_01 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_02 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_03 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_04 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " APMS-Taxonomy " ,"children": [
-  {
-"name": " APMS-Taxonomy " ,"children": [
-  {
-"name": " http-server: APMS-Taxonomy :group=Default " }  ]}  ]} , {
-"name": " Alexandria_01 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_02 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_03 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_04 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " STATS-Data " ,"children": [
-  {
-"name": " STATS-Data " ,"children": [
-  {
-"name": " http-server: STATS-Data :group=Default " }  ]}  ]} , {
+"name": " http-server: Admin :group=Data-Nodes " } , {
+"name": " http-server: Admin :group=Evaluator-Nodes " } , {
+"name": " http-server: Admin :group=DataStaging-Nodes " }  ]}  ]} , {
 "name": " Extensions " ,"children": [
   {
 "name": " Extensions " }  ]} , {
-"name": " TutorialDB-1 " ,"children": [
+"name": " patentPartsDB_F1 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11447.lexis-nexis.com " ,"children": [
   {
-"name": " TutorialDB " ,"children": [
+"name": " patentContentDB_F2 " ,"children": [
   {
-"name": " http-server: TutorialServer :group=Default " }  ]}  ]} , {
-"name": " TutorialServer-modules-1 " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " TutorialServer-modules " }  ]} , {
-"name": " TestVisualizations-modules-1 " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F74 " ,"children": [
   {
-"name": " TestVisualizations-modules " }  ]} , {
-"name": " Rosetta " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " Rosetta " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F145 " ,"children": [
   {
-"name": " http-server: Rosetta-RestServer :group=Default " } , {
-"name": " http-server: Rosetta-CustomRestServer :group=Default " }  ]}  ]} , {
-"name": " Rosetta-RestServer-modules-1 " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " Rosetta-RestServer-modules " }  ]} , {
-"name": " Oscars " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentSearchDB_F1_Replica " } , {
+"name": " patentContentDB_F211_Replica " } , {
+"name": " patentContentDB_F212_Replica " } , {
+"name": " Security_F1_Replica " } , {
+"name": " patentPartsDB_F2 " ,"children": [
   {
-"name": " Oscars " ,"children": [
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11448.lexis-nexis.com " ,"children": [
   {
-"name": " http-server: Oscars :group=Default " } , {
-"name": " http-server: Oscars-1 :group=Default " }  ]}  ]} , {
-"name": " Oscars-modules-1 " ,"children": [
+"name": " patentContentDB_F3 " ,"children": [
   {
-"name": " Oscars-modules " }  ]} , {
-"name": " Oscars-1-modules-1 " ,"children": [
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F75 " ,"children": [
   {
-"name": " Oscars-1-modules " }  ]} , {
-"name": " ZachTest1 " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " ZachTest " }  ]} , {
-"name": " Meters " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F146 " ,"children": [
   {
-"name": " Meters " }  ]}  ]} , {
-"name": " ctcmkliapp02.ap.org " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " eAP05_2007- " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F208_Replica " } , {
+"name": " patentContentDB_F209_Replica " } , {
+"name": " patentContentDB_F210_Replica " } , {
+"name": " Schemas_F1 " ,"children": [
   {
-"name": " eAP_2007- " ,"children": [
+"name": " Schemas " }  ]} , {
+"name": " patentPartsDB_F3 " ,"children": [
   {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP06_2007- " ,"children": [
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11449.lexis-nexis.com " ,"children": [
   {
-"name": " eAP_2007- " ,"children": [
+"name": " patentContentDB_F4 " ,"children": [
   {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP07_2007- " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " eAP_2007- " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F76 " ,"children": [
   {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP08_2007- " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " eAP_2007- " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F147 " ,"children": [
   {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " Bodleian_05 " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " Bodleian " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F205_Replica " } , {
+"name": " patentContentDB_F206_Replica " } , {
+"name": " patentContentDB_F207_Replica " } , {
+"name": " Modules_F1 " ,"children": [
   {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_06 " ,"children": [
+"name": " Modules " ,"children": [
   {
-"name": " Bodleian " ,"children": [
+"name": " http-server: 8020-Modules-WebDAV :group=Evaluator-Nodes " } , {
+"name": " http-server: 8020-Modules-WebDAV :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentPartsDB_F4 " ,"children": [
   {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_07 " ,"children": [
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11450.lexis-nexis.com " ,"children": [
   {
-"name": " Bodleian " ,"children": [
+"name": " patentContentDB_F5 " ,"children": [
   {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_08 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_05 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_06 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_07 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_08 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " ECR_APS " ,"children": [
-  {
-"name": " ECR_APS " ,"children": [
-  {
-"name": " http-server: ZachTestWebDav :group=Default " } , {
-"name": " http-server: ECR_APS :group=Default " } , {
-"name": " http-server: ecr-aps-rest :group=Default " }  ]}  ]} , {
-"name": " ZachTest2 " ,"children": [
-  {
-"name": " ZachTest " }  ]}  ]} , {
-"name": " ctcmkliapp03.ap.org " ,"children": [
-  {
-"name": " eAP09_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
-  {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP10_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
-  {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP11_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
-  {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " eAP12_2007- " ,"children": [
-  {
-"name": " eAP_2007- " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " http-server: eAP-8101 :group=Default " } , {
-"name": " http-server: mlsearch-8022 :group=Default " } , {
-"name": " xdbc-server: eAP-9001 :group=Default " }  ]}  ]} , {
-"name": " Bodleian_09 " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F77 " ,"children": [
   {
-"name": " Bodleian " ,"children": [
+"name": " patentContentDB " ,"children": [
   {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_10 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_11 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_12 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_09 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_10 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_11 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_12 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " RESTdb-1 " ,"children": [
-  {
-"name": " RESTdb " ,"children": [
-  {
-"name": " http-server: RESTServer8003 :group=Default " }  ]}  ]} , {
-"name": " RESTServer8003-modules-1 " ,"children": [
-  {
-"name": " RESTServer8003-modules " }  ]} , {
-"name": " CSV-Extract " ,"children": [
-  {
-"name": " CSV-Extract " ,"children": [
-  {
-"name": " http-server: CSV-Extract :group=Default " } , {
-"name": " http-server: CSV-Extract-WebDAV :group=Default " }  ]}  ]} , {
-"name": " ZachTest3 " ,"children": [
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F148 " ,"children": [
   {
-"name": " ZachTest " }  ]}  ]} , {
-"name": " ctcmkliapp04.ap.org " ,"children": [
-  {
-"name": " Bodleian_13 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_14 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_15 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_16 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_13 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_14 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_15 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Alexandria_16 " ,"children": [
-  {
-"name": " Alexandria " ,"children": [
-  {
-"name": " http-server: Alexandria-8026 :group=Default " } , {
-"name": " http-server: 8096-HTTP-Loader-Alexandria :group=Default " } , {
-"name": " xdbc-server: 8093-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " bodleian-rest-8004-modules-1 " ,"children": [
-  {
-"name": " bodleian-rest-8004-modules " }  ]} , {
-"name": " David_Test " ,"children": [
-  {
-"name": " David_Test " ,"children": [
-  {
-"name": " http-server: David_Test :group=Default " }  ]}  ]} , {
-"name": " TestVZ-modules-1 " ,"children": [
-  {
-"name": " TestVZ-modules " }  ]} , {
-"name": " ZachTest4 " ,"children": [
-  {
-"name": " ZachTest " }  ]}  ]} , {
-"name": " ctcmkliapp05.ap.org " ,"children": [
-  {
-"name": " Bodleian_17 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_18 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_19 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " Bodleian_20 " ,"children": [
-  {
-"name": " Bodleian " ,"children": [
-  {
-"name": " http-server: Bodleian-8025 :group=Default " } , {
-"name": " http-server: 8095-HTTP-Loader-Bodleian :group=Default " } , {
-"name": " http-server: bodleian-rest-8004 :group=Default " } , {
-"name": " http-server: BulkCompare-WebDAV :group=Default " } , {
-"name": " http-server: TestVisualizations :group=Default " } , {
-"name": " http-server: TestVZ :group=Default " } , {
-"name": " xdbc-server: CORBProcessing :group=Default " } , {
-"name": " xdbc-server: 8090-loader-xdbc :group=Default " }  ]}  ]} , {
-"name": " ELVIS_DR " ,"children": [
-  {
-"name": " ELVIS_DR " ,"children": [
-  {
-"name": " http-server: ELVIS_DR :group=Default " } , {
-"name": " xdbc-server: 3500-ELVIS_DR :group=Default " }  ]}  ]}  ]}  ]}  ]} 
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F202_Replica " } , {
+"name": " patentContentDB_F203_Replica " } , {
+"name": " patentContentDB_F204_Replica " } , {
+"name": " Modules_F1_Replica " } , {
+"name": " Schemas_F1_Replica " } , {
+"name": " patentPartsDB_F5 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11451.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F6 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F78 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F149 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F199_Replica " } , {
+"name": " patentContentDB_F200_Replica " } , {
+"name": " patentContentDB_F201_Replica " } , {
+"name": " Triggers_F1 " ,"children": [
+  {
+"name": " Triggers " }  ]} , {
+"name": " patentPartsDB_F6 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11452.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F7 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F79 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F150 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F196_Replica " } , {
+"name": " patentContentDB_F197_Replica " } , {
+"name": " patentContentDB_F198_Replica " } , {
+"name": " patentPartsDB_F7 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11453.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F8 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F80 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F151 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F193_Replica " } , {
+"name": " patentContentDB_F194_Replica " } , {
+"name": " patentContentDB_F195_Replica " } , {
+"name": " Triggers_F1_Replica " } , {
+"name": " patentPartsDB_F8 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11454.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F9 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F81 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F152 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F190_Replica " } , {
+"name": " patentContentDB_F191_Replica " } , {
+"name": " patentContentDB_F192_Replica " } , {
+"name": " patentPartsDB_F9 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11455.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F10 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F82 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F153 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F187_Replica " } , {
+"name": " patentContentDB_F188_Replica " } , {
+"name": " patentContentDB_F189_Replica " } , {
+"name": " patentPartsDB_F10 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11456.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F11 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F83 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F154 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F184_Replica " } , {
+"name": " patentContentDB_F185_Replica " } , {
+"name": " patentContentDB_F186_Replica " } , {
+"name": " patentPartsDB_F11 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11457.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F12 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F84 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F155 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F181_Replica " } , {
+"name": " patentContentDB_F182_Replica " } , {
+"name": " patentContentDB_F183_Replica " } , {
+"name": " patentPartsDB_F12 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11458.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F13 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F85 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F156 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F178_Replica " } , {
+"name": " patentContentDB_F179_Replica " } , {
+"name": " patentContentDB_F180_Replica " } , {
+"name": " patentPartsDB_F13 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11459.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F14 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F86 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F157 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F175_Replica " } , {
+"name": " patentContentDB_F176_Replica " } , {
+"name": " patentContentDB_F177_Replica " } , {
+"name": " patentPartsDB_F14 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11460.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F15 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F87 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F158 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F172_Replica " } , {
+"name": " patentContentDB_F173_Replica " } , {
+"name": " patentContentDB_F174_Replica " } , {
+"name": " patentPartsDB_F15 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11461.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F16 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F88 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F159 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F169_Replica " } , {
+"name": " patentContentDB_F170_Replica " } , {
+"name": " patentContentDB_F171_Replica " } , {
+"name": " patentPartsDB_F16 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11462.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F17 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F89 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F160 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F166_Replica " } , {
+"name": " patentContentDB_F167_Replica " } , {
+"name": " patentContentDB_F168_Replica " } , {
+"name": " patentPartsDB_F17 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11463.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F18 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F90 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F161 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F163_Replica " } , {
+"name": " patentContentDB_F164_Replica " } , {
+"name": " patentContentDB_F165_Replica " } , {
+"name": " patentPartsDB_F18 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11464.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F19 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F91 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F162 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F160_Replica " } , {
+"name": " patentContentDB_F161_Replica " } , {
+"name": " patentContentDB_F159_Replica " } , {
+"name": " patentPartsDB_F19 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11465.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F20 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F92 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F163 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F162_Replica " } , {
+"name": " patentContentDB_F157_Replica " } , {
+"name": " patentContentDB_F158_Replica " } , {
+"name": " patentPartsDB_F20 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11466.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F21 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F93 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F164 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F154_Replica " } , {
+"name": " patentContentDB_F155_Replica " } , {
+"name": " patentContentDB_F156_Replica " } , {
+"name": " patentPartsDB_F21 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11467.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F94 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F165 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F22 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F151_Replica " } , {
+"name": " patentContentDB_F152_Replica " } , {
+"name": " patentContentDB_F153_Replica " } , {
+"name": " patentPartsDB_F22 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11470.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F97 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F168 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F25 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F142_Replica " } , {
+"name": " patentContentDB_F143_Replica " } , {
+"name": " patentContentDB_F144_Replica " } , {
+"name": " patentPartsDB_F25 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11479.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F34 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F106 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F177 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F115_Replica " } , {
+"name": " patentContentDB_F116_Replica " } , {
+"name": " patentContentDB_F117_Replica " }  ]} , {
+"name": " psdb111940.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F35 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F107 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F178 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F112_Replica " } , {
+"name": " patentContentDB_F113_Replica " } , {
+"name": " patentContentDB_F114_Replica " }  ]} , {
+"name": " psdb111941.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F36 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F108 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F179 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F109_Replica " } , {
+"name": " patentContentDB_F110_Replica " } , {
+"name": " patentContentDB_F111_Replica " }  ]} , {
+"name": " psdb11477.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F32 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F104 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F175 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F121_Replica " } , {
+"name": " patentContentDB_F122_Replica " } , {
+"name": " patentContentDB_F123_Replica " }  ]} , {
+"name": " psdb11468.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F23 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F166 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F95 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F148_Replica " } , {
+"name": " patentContentDB_F149_Replica " } , {
+"name": " patentContentDB_F150_Replica " } , {
+"name": " patentPartsDB_F23 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11469.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F167 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F24 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F96 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F145_Replica " } , {
+"name": " patentContentDB_F146_Replica " } , {
+"name": " patentContentDB_F147_Replica " } , {
+"name": " patentPartsDB_F24 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11474.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F29 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F101 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F172 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F130_Replica " } , {
+"name": " patentContentDB_F131_Replica " } , {
+"name": " patentContentDB_F132_Replica " } , {
+"name": " patentPartsDB_F29 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11472.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F27 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F99 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F170 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F136_Replica " } , {
+"name": " patentContentDB_F137_Replica " } , {
+"name": " patentContentDB_F138_Replica " } , {
+"name": " patentPartsDB_F27 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11473.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F28 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F100 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F171 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F133_Replica " } , {
+"name": " patentContentDB_F134_Replica " } , {
+"name": " patentContentDB_F135_Replica " } , {
+"name": " patentPartsDB_F28 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11471.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F26 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F98 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F169 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F139_Replica " } , {
+"name": " patentContentDB_F140_Replica " } , {
+"name": " patentContentDB_F141_Replica " } , {
+"name": " patentPartsDB_F26 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11475.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F30 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F102 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F173 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F127_Replica " } , {
+"name": " patentContentDB_F128_Replica " } , {
+"name": " patentContentDB_F129_Replica " } , {
+"name": " patentPartsDB_F30 " ,"children": [
+  {
+"name": " patentPartsDB " }  ]}  ]} , {
+"name": " psdb11476.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F31 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F103 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F174 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F124_Replica " } , {
+"name": " patentContentDB_F125_Replica " } , {
+"name": " patentContentDB_F126_Replica " }  ]} , {
+"name": " psdb11478.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F33 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F105 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F176 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F118_Replica " } , {
+"name": " patentContentDB_F119_Replica " } , {
+"name": " patentContentDB_F120_Replica " }  ]} , {
+"name": " psdb111942.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F37 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F109 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F180 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F106_Replica " } , {
+"name": " patentContentDB_F107_Replica " } , {
+"name": " patentContentDB_F108_Replica " }  ]} , {
+"name": " psdb111943.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F38 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F110 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F181 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F103_Replica " } , {
+"name": " patentContentDB_F104_Replica " } , {
+"name": " patentContentDB_F105_Replica " }  ]} , {
+"name": " psdb111944.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F39 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F111 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F182 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F100_Replica " } , {
+"name": " patentContentDB_F101_Replica " } , {
+"name": " patentContentDB_F102_Replica " }  ]} , {
+"name": " psdb111945.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F40 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F112 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F183 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F97_Replica " } , {
+"name": " patentContentDB_F98_Replica " } , {
+"name": " patentContentDB_F99_Replica " }  ]} , {
+"name": " psdb111946.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F41 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F113 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F184 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F94_Replica " } , {
+"name": " patentContentDB_F95_Replica " } , {
+"name": " patentContentDB_F96_Replica " } , {
+"name": " patentPartsDB_F1_Replica " }  ]} , {
+"name": " psdb111947.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F42 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F114 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F185 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F91_Replica " } , {
+"name": " patentContentDB_F92_Replica " } , {
+"name": " patentContentDB_F93_Replica " } , {
+"name": " patentPartsDB_F2_Replica " }  ]} , {
+"name": " psdb111948.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F43 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F115 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F186 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F88_Replica " } , {
+"name": " patentContentDB_F89_Replica " } , {
+"name": " patentContentDB_F90_Replica " } , {
+"name": " patentPartsDB_F3_Replica " }  ]} , {
+"name": " psdb111949.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F44 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F116 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F187 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F85_Replica " } , {
+"name": " patentContentDB_F86_Replica " } , {
+"name": " patentContentDB_F87_Replica " } , {
+"name": " patentPartsDB_F4_Replica " }  ]} , {
+"name": " psdb111950.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F45 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F117 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F188 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F82_Replica " } , {
+"name": " patentContentDB_F83_Replica " } , {
+"name": " patentContentDB_F84_Replica " } , {
+"name": " patentPartsDB_F5_Replica " }  ]} , {
+"name": " psdb111951.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F46 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F118 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F189 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F79_Replica " } , {
+"name": " patentContentDB_F80_Replica " } , {
+"name": " patentContentDB_F81_Replica " } , {
+"name": " patentPartsDB_F6_Replica " }  ]} , {
+"name": " psdb111952.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F47 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F119 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F190 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F76_Replica " } , {
+"name": " patentContentDB_F77_Replica " } , {
+"name": " patentContentDB_F78_Replica " } , {
+"name": " patentPartsDB_F7_Replica " }  ]} , {
+"name": " psdb111953.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F48 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F120 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F191 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F73_Replica " } , {
+"name": " patentContentDB_F74_Replica " } , {
+"name": " patentContentDB_F75_Replica " } , {
+"name": " patentPartsDB_F8_Replica " }  ]} , {
+"name": " psdb111954.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F49 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F121 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F192 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F70_Replica " } , {
+"name": " patentContentDB_F71_Replica " } , {
+"name": " patentContentDB_F72_Replica " } , {
+"name": " patentPartsDB_F9_Replica " }  ]} , {
+"name": " psdb111955.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F50 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F122 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F193 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F67_Replica " } , {
+"name": " patentContentDB_F68_Replica " } , {
+"name": " patentContentDB_F69_Replica " } , {
+"name": " patentPartsDB_F10_Replica " }  ]} , {
+"name": " psdb111956.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F51 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F123 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F194 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F64_Replica " } , {
+"name": " patentContentDB_F65_Replica " } , {
+"name": " patentContentDB_F66_Replica " } , {
+"name": " patentPartsDB_F11_Replica " }  ]} , {
+"name": " psdb111957.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F52 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F124 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F195 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F61_Replica " } , {
+"name": " patentContentDB_F62_Replica " } , {
+"name": " patentContentDB_F63_Replica " } , {
+"name": " patentPartsDB_F12_Replica " }  ]} , {
+"name": " psdb111958.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F53 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F125 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F196 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F58_Replica " } , {
+"name": " patentContentDB_F59_Replica " } , {
+"name": " patentContentDB_F60_Replica " } , {
+"name": " patentPartsDB_F13_Replica " }  ]} , {
+"name": " psdb111959.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F54 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F126 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F197 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F55_Replica " } , {
+"name": " patentContentDB_F56_Replica " } , {
+"name": " patentContentDB_F57_Replica " } , {
+"name": " patentPartsDB_F14_Replica " }  ]} , {
+"name": " psdb111960.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F55 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F127 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F198 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F52_Replica " } , {
+"name": " patentContentDB_F53_Replica " } , {
+"name": " patentContentDB_F54_Replica " } , {
+"name": " patentPartsDB_F15_Replica " }  ]} , {
+"name": " psdb111961.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F56 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F128 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F199 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F49_Replica " } , {
+"name": " patentContentDB_F50_Replica " } , {
+"name": " patentContentDB_F51_Replica " } , {
+"name": " patentPartsDB_F16_Replica " }  ]} , {
+"name": " psdb111962.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F57 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F129 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F200 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F46_Replica " } , {
+"name": " patentContentDB_F47_Replica " } , {
+"name": " patentContentDB_F48_Replica " } , {
+"name": " patentPartsDB_F17_Replica " }  ]} , {
+"name": " psdb111963.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F58 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F130 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F201 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F43_Replica " } , {
+"name": " patentContentDB_F44_Replica " } , {
+"name": " patentContentDB_F45_Replica " } , {
+"name": " patentPartsDB_F18_Replica " }  ]} , {
+"name": " psdb111964.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F59 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F131 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F202 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F40_Replica " } , {
+"name": " patentContentDB_F41_Replica " } , {
+"name": " patentContentDB_F42_Replica " } , {
+"name": " patentPartsDB_F19_Replica " }  ]} , {
+"name": " psdb111966.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F61 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F133 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F204 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F34_Replica " } , {
+"name": " patentContentDB_F35_Replica " } , {
+"name": " patentContentDB_F36_Replica " } , {
+"name": " patentPartsDB_F21_Replica " }  ]} , {
+"name": " psdb111967.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F62 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F134 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F205 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F31_Replica " } , {
+"name": " patentContentDB_F32_Replica " } , {
+"name": " patentContentDB_F33_Replica " } , {
+"name": " patentPartsDB_F22_Replica " }  ]} , {
+"name": " psdb111968.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F63 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F135 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F206 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F28_Replica " } , {
+"name": " patentContentDB_F29_Replica " } , {
+"name": " patentContentDB_F30_Replica " } , {
+"name": " patentPartsDB_F23_Replica " }  ]} , {
+"name": " psdb111969.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F64 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F136 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F207 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F25_Replica " } , {
+"name": " patentContentDB_F26_Replica " } , {
+"name": " patentContentDB_F27_Replica " } , {
+"name": " patentPartsDB_F24_Replica " }  ]} , {
+"name": " psdb111970.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F65 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F137 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F208 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F22_Replica " } , {
+"name": " patentContentDB_F23_Replica " } , {
+"name": " patentContentDB_F24_Replica " } , {
+"name": " patentPartsDB_F25_Replica " }  ]} , {
+"name": " psdb111971.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F66 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F138 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F209 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F19_Replica " } , {
+"name": " patentContentDB_F20_Replica " } , {
+"name": " patentContentDB_F21_Replica " } , {
+"name": " patentPartsDB_F26_Replica " }  ]} , {
+"name": " psdb111972.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F67 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F139 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F210 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F16_Replica " } , {
+"name": " patentContentDB_F17_Replica " } , {
+"name": " patentContentDB_F18_Replica " } , {
+"name": " patentPartsDB_F27_Replica " }  ]} , {
+"name": " psdb111973.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F68 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F140 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F211 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F13_Replica " } , {
+"name": " patentContentDB_F14_Replica " } , {
+"name": " patentContentDB_F15_Replica " } , {
+"name": " patentPartsDB_F28_Replica " }  ]} , {
+"name": " psdb111974.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F69 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F141 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F212 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F10_Replica " } , {
+"name": " patentContentDB_F11_Replica " } , {
+"name": " patentContentDB_F12_Replica " } , {
+"name": " patentPartsDB_F29_Replica " }  ]} , {
+"name": " psdb111975.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F70 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F142 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F213 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F7_Replica " } , {
+"name": " patentContentDB_F8_Replica " } , {
+"name": " patentContentDB_F9_Replica " } , {
+"name": " patentPartsDB_F30_Replica " }  ]} , {
+"name": " psdb111976.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F71 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F143 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F214 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F4_Replica " } , {
+"name": " patentContentDB_F5_Replica " } , {
+"name": " patentContentDB_F6_Replica " }  ]} , {
+"name": " psdb111977.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F72 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F144 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F215 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F1_Replica " } , {
+"name": " patentContentDB_F2_Replica " } , {
+"name": " patentContentDB_F3_Replica " }  ]} , {
+"name": " psdb111965.lexis-nexis.com " ,"children": [
+  {
+"name": " patentContentDB_F132 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F203 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentContentDB_F37_Replica " } , {
+"name": " patentContentDB_F38_Replica " } , {
+"name": " patentContentDB_F39_Replica " } , {
+"name": " patentContentDB_F60 " ,"children": [
+  {
+"name": " patentContentDB " ,"children": [
+  {
+"name": " http-server: 34015-patentContentDB-app-HTTP :group=Evaluator-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=Evaluator-Nodes " } , {
+"name": " http-server: 8015-patentContentDB-app-HTTP :group=DataStaging-Nodes " } , {
+"name": " xdbc-server: 8016-patentContentDB-XDBC :group=DataStaging-Nodes " }  ]}  ]} , {
+"name": " patentPartsDB_F20_Replica " }  ]}  ]} , {
+"name": " Evaluator-Nodes " ,"children": [
+  {
+"name": " psdb11440.lexis-nexis.com " ,"children": [
+  {
+"name": " Documents " ,"children": [
+  {
+"name": " Documents " ,"children": [
+  {
+"name": " http-server: Docs :group=Data-Nodes " } , {
+"name": " http-server: cq :group=Data-Nodes " } , {
+"name": " http-server: cq :group=Evaluator-Nodes " } , {
+"name": " http-server: ML_STATS :group=Evaluator-Nodes " } , {
+"name": " http-server: HTTP_DBA :group=Evaluator-Nodes " }  ]}  ]} , {
+"name": " Last-Login " ,"children": [
+  {
+"name": " Last-Login " }  ]}  ]} , {
+"name": " psdb11441.lexis-nexis.com " } , {
+"name": " psdb11442.lexis-nexis.com " } , {
+"name": " psdb11443.lexis-nexis.com " } , {
+"name": " psdb111978.lexis-nexis.com " } , {
+"name": " psdb111979.lexis-nexis.com " }  ]} , {
+"name": " DataStaging-Nodes " ,"children": [
+  {
+"name": " psdb11444.lexis-nexis.com " } , {
+"name": " psdb11445.lexis-nexis.com " }  ]}  ]} 

@@ -146,7 +146,7 @@ declare variable $xml :=
 		<group>{$group/gr:group-name/text(), 
 		for $host in $HOSTS
 		where $host/ho:group eq $group/gr:group-id
-		return 
+		return
 			<host>{$host/ho:host-name/text(),
 			for $forest in $ASSIGNMENTS
 			where $forest/an:host eq $host/ho:host-id
@@ -157,7 +157,7 @@ declare variable $xml :=
 				return
 					<database>{$db/db:database-name/text(),
 					for $groups in $GROUPS
-					let $servers := $groups//gr:http-server | $groups//gr:xdbc-server | $groups//gr:odbc-server | $groups//gr:webdav-server
+					let $servers := $groups//gr:http-server | $groups//gr:xdbc-server | $groups//gr:odbc-server | $groups//gr:webDAV-server
         				return
 					for $server in $servers
         				let $node-name := fn:concat(fn:node-name($server), "-name")
@@ -375,9 +375,13 @@ declare function local:html()
           text {
             $i/hs:host-size,
             '/',
-            $i/hs:license-key-size },
-          string-join(
+            $i/hs:license-key-size }
+	   (:
+	   ,
+           string-join(
             ($i/hs:edition, $clean-options//hs:license-key-option), '; ') ))
+	  :)
+      ))
     }
   }
     </table>
@@ -653,7 +657,7 @@ declare function local:html()
 	<h2>Cluster Graph</h2>
 	
 	{(:JavaScript file for creating graph:)}
-	{xdmp:save("dashboard1/graph/cluster.json", local:walk-tree($xml))}
+	{xdmp:save("dashboard/graph/cluster.json", local:walk-tree($xml))}
         <script language="JavaScript" type="text/javascript" src="graph/graph.js"></script>
 
 

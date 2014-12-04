@@ -55,6 +55,9 @@ function update(source) {
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
       .on("click", function(d) { toggle(d); update(d); });
+      
+
+  nodeEnter.on("mouseover", function(d) {d3.select("text").append("text").text("Hello");});
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
