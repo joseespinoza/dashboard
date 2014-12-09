@@ -55,9 +55,39 @@ function update(source) {
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
       .on("click", function(d) { toggle(d); update(d); });
-      
 
-  nodeEnter.on("mouseover", function(d) {d3.select("text").append("text").text("Hello");});
+
+
+///////////TOOLTIP/////////////////////////////
+
+//creates div element to hold tooltip
+d3.select("body").append("div").attr("id","tooltip").attr("class","hidden").append("p").attr("id","value");
+
+//event listeners for tooltip
+vis.selectAll("g.node").on("mouseover", function(){
+	
+	//gets coordinates for the tooltip
+	var xPosition = d3.event.pageX;
+	var yPosition = d3.event.pageY;
+	
+	//creates url for HTTP request
+	var name = d3.select(this).select("text").html();
+	var url = "/modules/getproperties.xqy?nodename=" + name;
+
+	d3.select("#tooltip")
+  		.style("left", xPosition + "px")
+  		.style("top", yPosition + "px")
+  		.select("#value")
+
+	//sends a HTTP request to getproperties.xml, sends the header(nodename=<name of node>)
+	d3.xhr(url, function(data){return d3.select("#tooltip").select("#value").html(data.response);});
+		
+	d3.select("#tooltip").classed("hidden", false);
+      });
+nodeEnter.on("mouseout", function(){
+
+	d3.select("#tooltip").classed("hidden", true);
+});
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
