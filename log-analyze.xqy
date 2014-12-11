@@ -5,6 +5,8 @@ xquery version "1.0-ml";
  : @author Michael Blakeley, Mark Logic Corporation
  :
  :)
+
+
 declare namespace an="http://marklogic.com/xdmp/assignments";
 declare namespace db="http://marklogic.com/xdmp/database";
 declare namespace fs="http://marklogic.com/xdmp/status/forest";
@@ -14,10 +16,14 @@ declare namespace hs="http://marklogic.com/xdmp/status/host";
 declare namespace xh="http://www.w3.org/1999/xhtml";
 declare namespace cl="http://marklogic.com/xdmp/clusters";
 
+
+
 import module namespace pd="http://marklogic.com/performance/dashboard"
  at "lib-dashboard.xqy";
 import module namespace v="http://marklogic.com/performance/dashboard/view"
  at "lib-view.xqy";
+
+
 
 declare variable $WARN := attribute class { 'warn' }
 ;
@@ -185,7 +191,8 @@ as node()
   return
   if (fn:local-name($node) = "cluster") then(
     (: Reconstruct node and descend to its children :)
-    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'"', if(boolean($node/child::text()/following-sibling::*)) then(',"children": [&#10;',
+    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'"', if(boolean($node/child::text()/following-sibling::*))
+    then(',"type":"cluster","children": [&#10;',
       for $child-node in $node/node()
       return
         (local:walk-tree($child-node)),
@@ -196,7 +203,7 @@ as node()
     })
     
   else if (fn:local-name($node) = "group") then(
-    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'"', if(boolean($node/child::text()/following-sibling::*)) then(',"children": [&#10;',
+    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'","type":"group"', if(boolean($node/child::text()/following-sibling::*)) then(',"children": [&#10;',
       for $child-node in $node/node()
       return
         local:walk-tree($child-node),
@@ -214,7 +221,9 @@ as node()
            fn:local-name($node) = "database" or
            fn:local-name($node) = "app-server") then(
     (: Return the json equivalent :)
-    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'"', if(boolean($node/child::text()/following-sibling::*)) then(',"children": [&#10;',
+    text { '{&#10;"name": "',fn:normalize-space(xdmp:quote($node/text())),'","type": "',fn:local-name($node),'"', if(boolean($node/child::text()/following-sibling::*)) 
+    (:Adds the type of node as an additional property of that object:)
+    then(',"children": [&#10;',
     for $child-node in $node/node() return local:walk-tree($child-node),
       "]}"
     )else ('}'),
@@ -226,6 +235,45 @@ as node()
     (: Should never get here :)
     text { '"###### ERROR ########": ','"',fn:local-name($node),'",','"children": [&#10;' }
 };
+
+(:Writes out support dump parts to a document in the database to be used my /modules/getproperties.xqy later:)
+declare function local:add-dump() {
+	let $cluster-name := fn:concat($CLUSTER/cl:cluster-name/text(), ".xml")
+	return
+	xdmp:document-insert($cluster-name,
+	<summary>
+		<assignments>
+			{$ASSIGNMENTS}
+		</assignments>
+		<databases>
+			{$DATABASES}
+		</databases>
+		<groups>
+			{$GROUPS}
+		</groups>
+		<hosts>
+			{$HOSTS}
+		</hosts>
+		<hosts-status>
+			{$HOST-STATUS}
+		</hosts-status>
+		<forest-counts>
+			{$FOREST-COUNTS}
+		</forest-counts>
+		<forest-status>
+			{$FOREST-STATUS}
+		</forest-status>
+		<servers>
+			{$SERVER}
+		</servers>
+		<cluster>
+			{$CLUSTER}
+		</cluster>
+	</summary>
+)
+};
+
+
 
 
 
@@ -657,9 +705,10 @@ declare function local:html()
 	<h2>Cluster Graph</h2>
 	
 	{(:JavaScript file for creating graph:)}
+	{local:add-dump()}
 	{xdmp:save("dashboard1/graph/cluster.json", local:walk-tree($xml))}
         <script language="JavaScript" type="text/javascript" src="graph/graph.js"></script>
-
+	
 
 <hr/>
 	<code>

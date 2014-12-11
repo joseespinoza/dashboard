@@ -72,7 +72,8 @@ vis.selectAll("g.node").on("mouseover", function(){
 	
 	//creates url for HTTP request
 	var name = d3.select(this).select("text").html();
-	var url = "/modules/getproperties.xqy?nodename=" + name;
+	var type = d3.select(this).select("text").attr("type");
+	var url = "/modules/getproperties.xqy?nodename=" + name + "&type=" + type ;
 
 	d3.select("#tooltip")
   		.style("left", xPosition + "px")
@@ -97,6 +98,7 @@ nodeEnter.on("mouseout", function(){
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .attr("type",function(d){return d.type.trim();})
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
 
