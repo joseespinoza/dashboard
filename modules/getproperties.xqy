@@ -1,5 +1,6 @@
 xquery version "1.0-ml";
 (:A file that returns an html response containing desired information about a specific kind of node:)
+(:Chris Chaplinsky:)
 
 declare namespace an="http://marklogic.com/xdmp/assignments";(:for assignments.xml:)
 declare namespace db="http://marklogic.com/xdmp/database";(:for databases.xml:)
