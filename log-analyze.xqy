@@ -708,7 +708,7 @@ declare function local:html()
 	{(:Adds part of the support dump to the database:)}
 	{local:add-dump()}
 	{(:saves the json converted $xml variable to a file:)}
-	{xdmp:save("dashboard1/graph/cluster.json", local:walk-tree($xml))}
+	{xdmp:save("dashboard/graph/cluster.json", local:walk-tree($xml))}
 	{(:Calls the javascript file graph.js which creates the graph:)}
         <script language="JavaScript" type="text/javascript" src="graph/graph.js"></script>
 	
