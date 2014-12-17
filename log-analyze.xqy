@@ -15,6 +15,7 @@ declare namespace ho="http://marklogic.com/xdmp/hosts";
 declare namespace hs="http://marklogic.com/xdmp/status/host";
 declare namespace xh="http://www.w3.org/1999/xhtml";
 declare namespace cl="http://marklogic.com/xdmp/clusters";
+declare namespace sv="http://marklogic.com/xdmp/status/server";
 
 
 
@@ -109,8 +110,8 @@ declare variable $FOREST-STATUS as element(fs:forest-status)* :=
   $SUPPORT/fs:forest-status
 ;
 
-declare variable $SERVER as element(xdmp:server-status)* :=
-  $SUPPORT/xdmp:server-status
+declare variable $SERVER as element(sv:server-status)* :=
+  $SUPPORT/sv:server-status
 ;
 
 declare variable $CLUSTER as element(cl:clusters)* :=
@@ -143,9 +144,10 @@ declare variable $SIZING as element(pd:sizing)* := (
   return $sizing
 );
 
-
+(:creates an xml node showing the hierarchy of the different nodes and there relationships to one another:)
 declare variable $xml := 
 	
+	(:one top level cluster node:)
 	<cluster> {$CLUSTER/cl:cluster-name/text()} 
 	{for $group in $GROUPS
 	 return 
@@ -182,6 +184,7 @@ declare variable $xml :=
 ;
 
 
+(:function for converting the $xml variable(above) to to a json variable for further processing by the graph.js file:)
 declare function local:walk-tree(
   $node as node())
 as node()
@@ -236,11 +239,12 @@ as node()
     text { '"###### ERROR ########": ','"',fn:local-name($node),'",','"children": [&#10;' }
 };
 
-(:Writes out support dump parts to a document in the database to be used my /modules/getproperties.xqy later:)
+(:Writes out support dump parts to a document in the database to be used by /modules/getproperties.xqy later:)
 declare function local:add-dump() {
 	let $cluster-name := fn:concat($CLUSTER/cl:cluster-name/text(), ".xml")
 	return
-	xdmp:document-insert($cluster-name,
+	xdmp:document-insert("cluster-summary.xml",
+	(:xdmp:save("dashboard1/graph/cluster-summary.xml",:)
 	<summary>
 		<assignments>
 			{$ASSIGNMENTS}
@@ -272,10 +276,6 @@ declare function local:add-dump() {
 	</summary>
 )
 };
-
-
-
-
 
 declare function local:unquote(
   $in as xs:string )
@@ -383,7 +383,7 @@ declare function local:html()
         <script language="JavaScript" type="text/javascript"
       src="log-analyze.js">
         </script>
-
+    {(:All other dependencies needed to make the graph, including d3 source files and css style sheets:)}
     <link type="text/css" rel="stylesheet" href="graph/style.css"/>
     <script language="JavaScript" type="text/javascript" src="graph/d3/d3.js"></script>
     <script language="JavaScript" type="text/javascript" src="graph/d3/d3.layout.js"></script>
@@ -705,8 +705,11 @@ declare function local:html()
 	<h2>Cluster Graph</h2>
 	
 	{(:JavaScript file for creating graph:)}
+	{(:Adds part of the support dump to the database:)}
 	{local:add-dump()}
+	{(:saves the json converted $xml variable to a file:)}
 	{xdmp:save("dashboard1/graph/cluster.json", local:walk-tree($xml))}
+	{(:Calls the javascript file graph.js which creates the graph:)}
         <script language="JavaScript" type="text/javascript" src="graph/graph.js"></script>
 	
 

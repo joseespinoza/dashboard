@@ -63,6 +63,7 @@ function update(source) {
 //creates div element to hold tooltip
 d3.select("body").append("div").attr("id","tooltip").attr("class","hidden").append("p").attr("id","value");
 
+
 //event listeners for tooltip
 vis.selectAll("g.node").on("mouseover", function(){
 	
@@ -73,22 +74,25 @@ vis.selectAll("g.node").on("mouseover", function(){
 	//creates url for HTTP request
 	var name = d3.select(this).select("text").html();
 	var type = d3.select(this).select("text").attr("type");
-	var url = "/modules/getproperties.xqy?nodename=" + name + "&type=" + type ;
+	var url = "/modules/getproperties.xqy?nodename=" + name + "&type=" + type;
 
 	d3.select("#tooltip")
   		.style("left", xPosition + "px")
   		.style("top", yPosition + "px")
   		.select("#value")
 
-	//sends a HTTP request to getproperties.xml, sends the header(nodename=<name of node>)
+	//sends a HTTP request to getproperties.xml, sends the header(nodename=<name of node>&type=<type of node>)
 	d3.xhr(url, function(data){return d3.select("#tooltip").select("#value").html(data.response);});
 		
 	d3.select("#tooltip").classed("hidden", false);
+	
       });
 nodeEnter.on("mouseout", function(){
 
 	d3.select("#tooltip").classed("hidden", true);
 });
+
+
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
@@ -98,8 +102,8 @@ nodeEnter.on("mouseout", function(){
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-      .attr("type",function(d){return d.type.trim();})
-      .text(function(d) { return d.name; })
+      .attr("type",function(d){return d.type.trim();})//trims off whitespace
+      .text(function(d) { return d.name.trim(); })//trims off whitespace
       .style("fill-opacity", 1e-6);
 
 
