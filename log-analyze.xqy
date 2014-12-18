@@ -377,6 +377,8 @@ declare function local:html()
     {
       element v:title { 'Support Log Analysis' },
       <v:head>
+      <meta http-equiv="Cache-Control" content="no-store" />
+      <meta http-equiv="Pragma" content="no-cache" />
         <script language="JavaScript" type="text/javascript"
       src="jquery-1.3.2.min.js">
         </script>

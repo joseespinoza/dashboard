@@ -1,4 +1,4 @@
-<!--
+//<!--
 var m = [20, 170, 20, 170],
     w = 1580 - m[1] - m[3],
     h = 800 - m[0] - m[2],
@@ -16,8 +16,7 @@ var vis = d3.select("body").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-
-d3.json("graph/cluster.json", function(json) {
+d3.json("modules/getjson.xqy", function(json) {
   root = json;
   root.x0 = h / 2;
   root.y0 = 0;
@@ -29,11 +28,12 @@ d3.json("graph/cluster.json", function(json) {
     }
   }
 
-  // Initialize the display to show a few nodes.
+  //Initialize the display to show a few nodes.
   root.children.forEach(toggleAll);
 
   update(root);
 });
+
 
 function update(source) {
   var duration = d3.event && d3.event.altKey ? 5000 : 500;
@@ -178,4 +178,5 @@ function toggle(d) {
     d._children = null;
   }
 }
+
 //-->
