@@ -8,6 +8,8 @@ let $_2 := xdmp:add-response-header("Cache-Control","must-revalidate")
 let $_3 := xdmp:add-response-header("Pragma","no-cache")
 let $_4 := xdmp:add-response-header("Expires","0")
 let $_5 := xdmp:set-response-content-type("application/json")
+
+(:"file://Users/cchaplin/Library/MarkLogic/dashboard/graph/cluster.json":)
 let $json := xdmp:document-get("dashboard/graph/cluster.json")
 return
 	$json

@@ -1,5 +1,6 @@
 xquery version "1.0-ml";
-(:A file that returns an html response containing desired information about a specific kind of node:)
+(:An XQuery main module that receives HTTP request from /graph/graph.js and returns an HTTP response containing the html used within the tooltip pop-up window:)
+(:Takes in two header fields from the HTTP request("nodename" and "type"), uses these fields to generate a response back to graph/graph.js:)
 (:Chris Chaplinsky:)
 
 declare namespace an="http://marklogic.com/xdmp/assignments";(:for assignments.xml:)
@@ -8,18 +9,21 @@ declare namespace fs="http://marklogic.com/xdmp/status/forest";(:for Forest Stat
 declare namespace gr="http://marklogic.com/xdmp/group";(:for groups.xml:)
 declare namespace ho="http://marklogic.com/xdmp/hosts";(:for hosts.xml:)
 declare namespace hs="http://marklogic.com/xdmp/status/host";(:for Host Status:)
-declare namespace xh="http://www.w3.org/1999/xhtml";(::)
+declare namespace xh="http://www.w3.org/1999/xhtml";
 declare namespace cl="http://marklogic.com/xdmp/clusters";(:for cluster.xml:)
 declare namespace sv="http://marklogic.com/xdmp/status/server";
 
 
 declare variable $responseType := xdmp:set-response-content-type("text/html");
 
+(:gets request header fields:)
 let $nodename := xdmp:get-request-field("nodename")
 let $node-type := xdmp:get-request-field("type")
+(:Name of shortened Support Dump on the database containing all necessary node information, this file is generated in log-analyze.xqy :)
 let $filename := "cluster-summary.xml"
 return
 
+(:Descion Making (if/else) statements generating different output based on node type:)
 (:CLUSTER PROPERTIES:)
 if($node-type="cluster") then(
 <html>
@@ -64,18 +68,6 @@ if($node-type="cluster") then(
 		<br/>
 		expanded-tree-cache-partitions: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:expanded-tree-cache-partitions}
 		<br/>
-		triple-cache-size: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:triple-cache-size}
-		<br/>
-		triple-cache-partitions: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:triple-cache-partitions}
-		<br/>
-		triple-cache-timeout: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:triple-cache-timeout}
-		<br/>
-		triple-value-cache-size: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:triple-value-cache-size}
-		<br/>
-		triple-value-cache-partitions: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:triple-value-cache-partitions}
-		<br/>
-		triple-value-cache-timeout: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:triple-value-cache-timeout}
-		<br/>
 		http-timeout: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:http-timeout}
 		<br/>
 		xdqp-timeout: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:xdqp-timeout}
@@ -88,9 +80,6 @@ if($node-type="cluster") then(
 		<br/>
 		background-io-limit: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:background-io-limit}
 		<br/>
-		metering-enabled: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:metering-enabled}
-		<br/>
-		performance-metering-enabled: {fn:doc($filename)/summary/groups/gr:group[gr:group-name=$nodename]/gr:performance-metering-enabled}
 
 	</properties>
 </html>
@@ -131,61 +120,7 @@ if($node-type="cluster") then(
 		host-large-data-size: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:host-large-data-size}
 		<br/>
 		log-device-space: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:log-device-space}
-		<br/>
-		data-dir-space: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:data-dir-space}
-		<br/>
-		query-read-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:query-read-rate}
-		<br/>
-		query-read-load: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:query-read-load}
-		<br/>
-		merge-read-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:merge-read-rate}
-		<br/>
-		merge-write-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:merge-write-rate}
-		<br/>
-		backup-read-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:backup-read-rate}
-		<br/>
-		backup-write-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:backup-write-rate}
-		<br/>
-		restore-read-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:restore-read-rate}
-		<br/>
-		restore-write-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:restore-write-rate}
-		<br/>
-		large-read-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:large-read-rate}
-		<br/>
-		large-write-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:large-write-rate}
-		<br/>
-		external-binary-read-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:external-binary-read-rate}
-		<br/>
-		xdqp-client-receive-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:xdqp-client-receive-rate}
-		<br/>
-		xdqp-client-send-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:xdqp-client-send-rate}
-		<br/>
-		xdqp-server-receive-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:xdqp-server-receive-rate}
-		<br/>
-		xdqp-server-send-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:xdqp-server-send-rate}
-		<br/>
-		foreign-xdqp-client-receive-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:foreign-xdqp-client-receive-rate}
-		<br/>
-		foreign-xdqp-client-send-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:foreign-xdqp-client-send-rate}
-		<br/>
-		foreign-xdqp-server-receive-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:foreign-xdqp-server-receive-rate}
-		<br/>
-		foreign-xdqp-server-send-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:foreign-xdqp-server-send-rate}
-		<br/>
-		read-lock-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:read-lock-rate}
-		<br/>
-		read-lock-wait-load: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:read-lock-wait-load}
-		<br/>
-		read-lock-hold-load: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:read-lock-hold-load}
-		<br/>
-		write-lock-wait-load: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:write-lock-wait-load}
-		<br/>
-		write-lock-hold-load: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:write-lock-hold-load}
-		<br/>
-		deadlock-rate: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:deadlock-rate}
-		<br/>
-		deadlock-wait-load: {fn:doc($filename)/summary/hosts-status/hs:host-status[hs:host-name=$nodename]/hs:deadlock-wait-load}
-
+		
 		{(:{fn:doc($filename)/summary/hosts/ho:host[ho:host-name=$nodename]:)}
 	</properties>
 </html>
